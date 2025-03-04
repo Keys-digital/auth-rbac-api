@@ -1,0 +1,41 @@
+{
+  "name": "auth-rbac-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JWT",
+    "authentication",
+    "RBAC",
+    "role-based-access-control",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "AWS",
+    "API",
+    "security",
+    "user-authentication",
+    "authorization",
+    "REST",
+    "secure-api"
+  ],
+  "author": "Light Ikoyo",
+  "license": "ISC",
+  "description": "A secure authentication system built with Node.js, Express.js, MongoDB (Atlas), and AWS. Implements JWT authentication and Role-Based Access Control (RBAC), allowing users to log in and access APIs based on roles (Admin, Shipper, Carrier).",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
