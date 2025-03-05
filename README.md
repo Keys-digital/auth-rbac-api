@@ -26,9 +26,12 @@ Postman (for testing API requests)
 1. Clone the Repository
 
 git clone https://github.com/Keys-digital/auth-rbac-api.git
-cd auth-rbac-api 2. Install Dependencies
+cd auth-rbac-api 
+
+2. Install Dependencies
 
 npm install
+
 This installs required packages:
 
 express – Web framework
@@ -47,19 +50,24 @@ express-validator – Validating user input
 
 nodemon (for development mode)
 
+
 3. Set Up Environment Variables
+
    Create a .env file in the project root and add:
 
 ini
 PORT=5000
 MONGO_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_very_secret_key 4. Run the Server
+
 For development mode (auto-restarts on changes):
 
 npm run dev
+
 For production mode:
 
 npm start
+
 The server should be running on http://localhost:5000.
 
 API Routes
@@ -77,13 +85,16 @@ json
 "password": "password123",
 "role": "Shipper"
 }
+
 Sample Login Request:
 
 json
 {
 "email": "johndoe@example.com",
 "password": "password123"
-} 2. Protected Routes (RBAC)
+} 
+
+2. Protected Routes (RBAC)
 Method Endpoint Required Role
 GET /api/protected/admin Admin
 GET /api/protected/shipper Shipper
@@ -91,6 +102,7 @@ GET /api/protected/carrier Carrier
 To access protected routes, include the JWT token in the Authorization header:
 
 Authorization: Bearer your_jwt_token
+
 Project Structure
 /auth-rbac-api
 ├── models/
@@ -105,6 +117,7 @@ Project Structure
 ├── package.json
 
 Deployment
+
 Deploy on AWS
 
 Set environment variables on the hosting platform
