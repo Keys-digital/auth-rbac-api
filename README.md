@@ -26,7 +26,7 @@ Postman (for testing API requests)
 1. Clone the Repository
 
 git clone https://github.com/Keys-digital/auth-rbac-api.git
-cd auth-rbac-api 
+cd auth-rbac-api
 
 2. Install Dependencies
 
@@ -49,7 +49,6 @@ cors – Cross-Origin Resource Sharing
 express-validator – Validating user input
 
 nodemon (for development mode)
-
 
 3. Set Up Environment Variables
 
@@ -92,14 +91,14 @@ json
 {
 "email": "johndoe@example.com",
 "password": "password123"
-} 
+}
 
 2. Protected Routes (RBAC)
-Method Endpoint Required Role
-GET /api/protected/admin Admin
-GET /api/protected/shipper Shipper
-GET /api/protected/carrier Carrier
-To access protected routes, include the JWT token in the Authorization header:
+   Method Endpoint Required Role
+   GET /api/protected/admin Admin
+   GET /api/protected/shipper Shipper
+   GET /api/protected/carrier Carrier
+   To access protected routes, include the JWT token in the Authorization header:
 
 Authorization: Bearer your_jwt_token
 
@@ -113,6 +112,8 @@ Project Structure
 ├── middleware/
 │ ├── auth.js
 ├── .env
+├── .env.example
+├── .ignore
 ├── index.js
 ├── package.json
 
