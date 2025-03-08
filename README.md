@@ -104,18 +104,13 @@ Authorization: Bearer your_jwt_token
 
 Project Structure
 /auth-rbac-api
-├── models/
-│ ├── User.js
-├── routes/
-│ ├── auth.js
-│ ├── protected.js
-├── middleware/
-│ ├── auth.js
-├── .env
-├── .env.example
-├── .ignore
-├── index.js
-├── package.json
+models/User.js
+routes/auth.js\protected.js
+middleware/auth.js .env
+.env.example
+.ignore
+index.js
+package.json
 
 Deployment
 
